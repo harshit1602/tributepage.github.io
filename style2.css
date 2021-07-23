@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+margin: 0;
+}
+
+
+body
+{
+background-image: linear-gradient(to right, hsl(29, 100%, 50%), #ffffff , #2bff00);
+}
+
+/* Basic styling tags */
+
+h1
+{
+font-family: 'Righteous', cursive;
+text-align: center;
+font-size: 70px;
+}
+
+
+h3
+{
+font-family: 'Niconne', cursive;
+text-align: center;
+font-size: 30px;
+}
+
+
+p
+{
+font-size: 30px;
+text-align: center;
+margin-top: 30px;
+}
+
+/* The Parent Div containing the photo and text */
+
+.parent
+{
+height: 50vh;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+box-sizing: border-box;
+margin-top: 50px;
+}
+
+
+.photo
+{
+max-width: 50%;
+text-align: center;
+}
+
+
+.photo img
+{
+width: 450px;
+}
+
+
+.about
+{
+margin-top: 1%;
+width: 50%;
+height: auto;
+padding: 0 5%;
+box-sizing: border-box;
+text-align: center;
+line-height: 1.7;
+}
+
+
+.about p
+{
+font-size: 20px;
+font-family: 'Yomogi', cursive;
+text-align: center;
+}
+
+/* Styling the first (life) div */
+
+.para
+{
+background-color: rgba(255, 255, 255, 0.4);
+border: 4px black solid;
+margin-top: 50px;
+height: auto;
+max-width: 90%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 10px 10px 10px 10px ;
+}
+
+
+.para h2
+{
+font-family: 'Righteous', cursive;
+text-align: center;
+}
+
+
+.para p
+{
+font-family: 'Yomogi', cursive;
+font-size: 20px;
+text-align: center;
+}
+
+
+.para a 
+{   
+text-decoration:none;
+color: black;
+}
+
+
+.para a :visited :active
+{
+text-decoration:none;
+color: black;
+}
+
+
+.para a:hover
+{
+text-decoration-line: underline;
+color: black;
+}
+
+/* Styling the second (inspirational) div */
+
+.inspi
+{
+background-color: rgba(255, 255, 255, 0.4);
+margin-top: 50px;
+border: 4px black solid;
+height: auto;
+max-width: 90%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 10px 10px 10px 10px ;
+}
+
+
+.inspi h2
+{
+font-family: 'Righteous', cursive;
+text-align: center;
+}
+
+
+
+.inspi p
+{
+font-family: 'Yomogi', cursive;
+font-size: 20px;
+text-align: center;
+}
+
+
+.inspi li
+{
+font-family: 'Rancho', cursive;
+font-size: 25px;
+text-align: left;
+}
+
+/* Styling the footer */
+
+footer
+{
+font-family: 'Montserrat', sans-serif;
+margin-top: 10px;
+padding: 10px 10px 10px 10px; 
+color: white;
+background-color: black;    
+text-align: center;
+}
+
+
+footer a 
+{   
+text-decoration:none;
+color: white;
+}
+
+
+footer a :visited :active
+{
+text-decoration:none;
+color: white;
+}
+
+
+footer a:hover
+{
+text-decoration-line: underline;
+color: white;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px)
+{
+
+    
+.parent
+{
+display: block;
+}
+
+
+.photo
+{
+max-width: 100%;
+}
+
+
+.about
+{
+width: 100%;
+}
+
+
+.para
+{
+margin-top: 500px;
+}
+
+.inspi
+{
+margin-top: 25px;
+}
+}
+
+@media (max-width: 468px)
+{
+h1
+{
+font-size: 20px;
+}
+
+
+.parent
+{
+display: block;
+}
+
+
+.photo
+{
+max-width: 100%;
+}
+
+
+.about
+{
+width: 100%;
+}
+
+
+.para
+{
+margin-top: 650px;
+}
+
+.inspi
+{
+height: auto;
+margin-top: 25px;
+width: 400px;
+}
+
+
+.photo img
+{
+width: 100%;
+height: auto;
+}
+}
+
+@media (min-width: 1024px)
+{
+
+    
+.about
+{
+width: 100%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1023px)
+{
+
+.photo
+{
+max-width: 100%;
+margin-top: 100px;
+}
+
+
+.about
+{
+margin-top: 100px;
+width: 100%;
+font-size: 16px;
+}
+
+
+.para
+{
+margin-top: 500px;
+}
+
+.inspi
+{
+margin-top: 25px;
+}
+
+
+.photo img
+{
+width: 100%;
+height: auto;
+}
+}
